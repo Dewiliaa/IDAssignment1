@@ -119,6 +119,7 @@ button {
     padding: 5px 10px;
     cursor: pointer;
     margin: 0 5px;
+    border-radius: 10px;
 }
 
 .add-to-cart {
@@ -177,6 +178,7 @@ hr {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .similar-product {
@@ -187,8 +189,8 @@ hr {
 }
 
 .similar-product img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -224,9 +226,10 @@ footer p {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .product-details {
-        flex-direction: column;
-        align-items: center;
+    .similar-product img {
+        width: 100%; /* Adjust to fill the container */
+        height: auto;
+        margin-bottom: 0; /* Remove or adjust margin as needed */
     }
 
     .product-info {
@@ -234,8 +237,8 @@ footer p {
         margin-left: 0; /* Remove the margin */
     }
 
-    .similar-products {
-        text-align: center;
+    .similar-product {
+        width: 80%; /* Adjust width for better spacing on smaller screens */
     }
 
     .similar-product-container {

@@ -78,6 +78,12 @@ nav a {
     border-radius: 10px;
 }
 
+/* Add this to your CSS */
+a.product-link {
+    text-decoration: none;
+    color: black;
+}
+
 /* Toggle switch styles */
 .switch {
     position: relative;
