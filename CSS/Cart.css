@@ -1,0 +1,237 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shein-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Cart Section Styles */
+.cart-section {
+    flex: 1.8;
+    text-align: center;
+}
+
+.cart-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.remove-button {
+    background-color: #d63031;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.remove-button:hover {
+    background-color: #b71540;
+}
+
+.cart-item img {
+    max-width: 140px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px grey solid;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
+
+.quantity-box button {
+    color: gray;
+}
+
+/* Enclosing plus and minus buttons in a grey box */
+.quantity-box {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.remove-button {
+    background-color: grey;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #b71540;
+}
+
+/* Cart Details Section Styles */
+.cart-details {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cart Total Styles */
+.cart-total {
+    margin-bottom: 0;
+    align-self:center;
+}
+
+/* Shipping Form Styles */
+.shipping-form {
+    margin-bottom: 20px;
+    max-width: 400px; /* Set the maximum width for the form */
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.apply-coupon-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.apply-coupon-button:hover {
+    background-color: #2980b9;
+}
+
+/* Total and Checkout Styles */
+.checkout-section {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+.proceed-to-checkout-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.proceed-to-checkout-button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    margin-top: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a[href="https://sg.shein.com/"] {
+    text-decoration: underline;
+}
+
+/* Social Media Icons in the Footer */
+footer img {
+    max-width: 30px;
+    height: auto;
+}
+
+footer p {
+    margin-top: 10px;
+}

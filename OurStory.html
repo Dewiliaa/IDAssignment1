@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SHEIN - Fast Fashion</title>
+    <link rel="stylesheet" href="/CSS/OurStory.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- SHEIN Logo within the navbar area but outside the nav tag -->
+        <img src="/Pictures/logo.png" alt="SHEIN Logo" class="shein-logo">
+        
+        <nav>
+            <a href="OurStory.html">Our Story</a>
+            <a href="Shop.html" id="shopLink">Shop</a>
+            <a href="#" id="loginLink">Log In</a>
+        </nav>
+    </div>
+
+    <!-- Slide Show -->
+    <section class="slideshow">
+        <img class="mySlides" src="Pictures/sehin1.webp" alt="Slide 1">
+        <img class="mySlides" src="Pictures/sehin2.png" alt="Slide 2">
+        <img class="mySlides" src="Pictures/sehin3.png" alt="Slide 3">
+    </section>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+    <!-- Introduction Section -->
+    <section class="custom-section">
+        <img src="/Pictures/white-logo.png" alt="SHEIN White Logo" class="white-logo">
+        <p>Shine In, Shine Out</p>
+    </section>
+
+    <!-- About SHEIN Section -->
+    <section class="custom-section-1">
+        <p>
+            Hi! It's SHEIN, an online retailer that empowers people to express themselves through fashion. We believe that
+            fashion should be fun, accessible, and affordable. That's why we offer a wide variety of clothing and
+            accessories at prices that everyone can love.
+        </p>
+        <p>
+            We're always on the lookout for the latest trends, and we're constantly adding new styles to our website. We
+            also offer a variety of sizes and styles to fit everyone, no matter your body type or personal style.
+        </p>
+        <p>
+            We're passionate about making fashion accessible to everyone, and we believe that everyone should feel
+            confident and beautiful in their own skin. That's why we're committed to providing a positive shopping
+            experience for all of our customers.
+        </p>
+        <p>
+            We hope you'll give us a try and see why we're the best place to shop for affordable, on-trend fashion.
+        </p>
+        <p>
+            Love,<br>
+            SHEIN
+        </p>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <a href="https://www.facebook.com/SHEINOFFICIAL/" target="_blank"><img src="/Pictures/fb.jpg" alt="Facebook Logo"></a>
+    <a href="https://www.pinterest.com/SHEINofficial/" target="_blank"><img src="/Pictures/pin.jpg" alt="Pinterest Logo"></a>
+    <a href="https://twitter.com/SHEIN_Official" target="_blank"><img src="/Pictures/tw.jpg" alt="Twitter Logo"></a>
+    <a href="https://www.linkedin.com/company/shein/?originalSubdomain=sg" target="_blank"><img src="/Pictures/in.png" alt="LinkedIn Logo"></a>
+    <p>Powered by <a href="https://sg.shein.com/" target="_blank">S H E I N</a></p>
+</footer>
+
+
+</body>
+
+</html>

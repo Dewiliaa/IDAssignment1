@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Summary.css">
+    <script src="/JavaScript/Summary.js"></script>
+    <title>Order Details</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+    <img src="/Pictures/logo.png" alt="SHEIN Logo" class="shein-logo">
+    <nav>
+        <a href="OurStory.html">Our Story</a>
+        <a href="Shop.html" id="shopLink">Shop</a>
+        <a href="#" id="loginLink">Log In</a>
+    </nav>
+</div>
+
+<div class="main-container">
+    <div class="order-details-container">
+        <div class="order-details">
+            <div class="left-section">
+                <h2 style="font-size: 30px;">Order Details</h2>
+                <!-- Updated dynamically using JavaScript -->
+                <p style="font-size: 20px;"><strong>ORDER NUMBER:</strong> <span id="order-number"></span></p>
+                <p style="font-size: 20px;"><strong>EMAIL:</strong> <span id="email"></span></p>
+                <p style="font-size: 20px;"><strong>PAYMENT METHOD:</strong> <span id="payment-method"></span></p>
+                <p style="font-size: 20px;"><strong>ORDER DATE:</strong> <span id="order-date"></span></p>
+                <p style="font-size: 20px;"><strong>DELIVERY OPTION:</strong> <span id="delivery-option"></span></p>
+                <p style="font-size: 20px;"><strong>DELIVERY ADDRESS:</strong><br> <span id="delivery-address"></span></p>
+                <p style="font-size: 20px;"><strong>CONTACT NUMBER:</strong> <span id="contact-number"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Summary Section -->
+    <div class="order-summary-container">
+        <h2 style="font-size: 30px;">Order Summary</h2>
+        <div class="order-summary">
+            <table style="font-size: 20px;">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Letter Graphic Drop Tee</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Alive Tee</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Khaki Shorts</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p style="font-size: 20px;"><strong>Subtotal:</strong> $XXX</p>
+            <p style="font-size: 20px;"><strong>Shipping:</strong> $XX</p>
+            <p style="font-size: 20px;"><strong>Total:</strong> $XXX</p>
+        </div>
+    </div>
+</div>
+
+<div class="order-confirmation">
+    <img src="/Pictures/deliv.png" alt="Delivery Truck Logo">
+    <p>We have received your order!</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <a href="https://www.facebook.com/SHEINOFFICIAL/" target="_blank"><img src="/Pictures/fb.jpg" alt="Facebook Logo"></a>
+    <a href="https://www.pinterest.com/SHEINofficial/" target="_blank"><img src="/Pictures/pin.jpg" alt="Pinterest Logo"></a>
+    <a href="https://twitter.com/SHEIN_Official" target="_blank"><img src="/Pictures/tw.jpg" alt="Twitter Logo"></a>
+    <a href="https://www.linkedin.com/company/shein/?originalSubdomain=sg" target="_blank"><img src="/Pictures/in.png" alt="LinkedIn Logo"></a>
+    <p style="font-size: 20px;">Powered by <a href="https://sg.shein.com/" target="_blank">S H E I N</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Cart.css">
+    <script src="/JavaScript/Cart.js"></script>
+    <title>Your Online Shop</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+    <img src="/Pictures/logo.png" alt="SHEIN Logo" class="shein-logo">
+    <nav>
+        <a href="OurStory.html">Our Story</a>
+        <a href="Shop.html" id="shopLink">Shop</a>
+        <a href="#" id="loginLink">Log In</a>
+    </nav>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <h1 class="cart-title">Shopping Cart</h1>
+        <div class="cart-items">
+            <!-- Sample Cart Item -->
+            <div class="cart-item">
+                <img src="/Pictures/pro1.webp" alt="Product 1">
+                <div class="product-info">
+                    <p class="product-name">Product Name 1</p>
+                    <p class="product-price">$19.99</p>
+                </div>
+                <div class="quantity-controls">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+                <button class="remove-button">X</button>
+            </div>
+            <!-- Add more cart items here -->
+        </div>
+    </div>
+
+    <!-- Cart Total, Shipping Form, and Checkout -->
+    <div class="cart-details">
+        <div class="cart-total">
+            <h2>Cart Total</h2>
+        </div>
+
+        <!-- Shipping Form -->
+        <div class="shipping-form">
+            <h2>Calculate Shipping</h2>
+            <form>
+                <label for="country">Select a Country:</label>
+                <select id="country" onchange="populateCities()">
+                    <option value="select" disabled>Select a Country</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="japan">Japan</option>
+                    <!-- Add country options here -->
+                </select>
+
+                <label for="city">Select a City:</label>
+                <select id="city">
+                    <option value="select" disabled>Select a City</option>
+                    <!-- Add city options here -->
+                </select>
+
+                <label for="postal-code">Postal Code/ZIP:</label>
+                <input type="text" id="postal-code" placeholder="Enter Postal Code">
+
+                <label for="coupon-code">Coupon Code:</label>
+                <input type="text" id="coupon-code" placeholder="Enter Coupon Code">
+
+                <button class="apply-coupon-button">Apply Coupon</button>
+            </form>
+        </div>
+
+        <!-- Total and Checkout -->
+        <div class="checkout-section">
+            <hr>
+            <h2>Total</h2>
+            <p>Total: $19.99</p>
+            <button class="proceed-to-checkout-button">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/SHEINOFFICIAL/" target="_blank"><img src="/Pictures/fb.jpg" alt="Facebook Logo"></a>
+        <a href="https://www.pinterest.com/SHEINofficial/" target="_blank"><img src="/Pictures/pin.jpg" alt="Pinterest Logo"></a>
+        <a href="https://twitter.com/SHEIN_Official" target="_blank"><img src="/Pictures/tw.jpg" alt="Twitter Logo"></a>
+        <a href="https://www.linkedin.com/company/shein/?originalSubdomain=sg" target="_blank"><img src="/Pictures/in.png" alt="LinkedIn Logo"></a>
+    </div>
+    <p>Powered by <a href="https://sg.shein.com/" target="_blank">S H E I N</a></p>
+</footer>
+
+</body>
+</html>
