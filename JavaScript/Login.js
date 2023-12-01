@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add event listener to the Log In link
     loginLink.addEventListener("click", function (event) {
-        // No need to check login validity for the Log In link
-        // You can add additional logic here if needed
+        
     });
 });

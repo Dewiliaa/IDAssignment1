@@ -13,12 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function updatePriceValue(value) {
         priceValueSpan.textContent = value;
 
-        // Adjust the maximum price based on your requirement
+        // Adjust the maximum price
         const maxPrice = 50;
         maxPriceSpan.textContent = maxPrice;
     }
 
-    // Optionally, you can set an initial value when the page loads
     updatePriceValue(priceRange.value);
 
     // Event listener for shopBySelect, sortBySelect, onSaleToggle, inStockToggle, and priceRange
@@ -39,14 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const onSaleChecked = onSaleToggle.checked;
         const inStockChecked = inStockToggle.checked;
 
-        // Clone the original products array to avoid modifying it directly
         const clonedProducts = Array.from(originalProducts).map(product => product.cloneNode(true));
 
         const filteredProducts = clonedProducts.filter(product => {
             const isTop = product.querySelector('h3').textContent.includes('Top');
             const isBottom = product.querySelector('h3').textContent.includes('Pants');
 
-            // Display both "Top" and "Bottoms" for "Default" case
             const isDefault = selectedCategory === 'Default';
             const category = isDefault || (selectedCategory === 'Tops' && isTop) || (selectedCategory === 'Bottoms' && isBottom);
 
@@ -57,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return category && isOnSale && isInStock;
         });
 
-        // Remove all products from the container
         productContainer.innerHTML = '';
 
         // Sort the filtered products
@@ -70,12 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (sortBy === 'priceHighToLow') {
                 return priceB - priceA;
             } else {
-                // Handle other sorting options if needed
                 return 0;
             }
         });
 
-        // Append the sorted and filtered products to the container
         sortedProducts.forEach(product => {
             productContainer.appendChild(product);
         });

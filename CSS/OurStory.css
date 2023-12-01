@@ -1,4 +1,3 @@
-/* Reset styles */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ body {
 
 .shein-logo {
     height: 40px;
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
 }
 
 nav {
@@ -33,10 +32,6 @@ nav a {
     padding: 5px 20px;
 }
 
-/* Rest of your styles remain unchanged */
-
-
-/* Slide Show styles */
 section.slideshow {
     max-width: 100%;
     overflow: hidden;
@@ -48,10 +43,9 @@ section.slideshow {
     margin: 0 auto;
 }
 
-/* Custom section styles */
 .custom-section {
     max-width: 800px;
-    margin: 20px auto; /* Center the section horizontally */
+    margin: 20px auto;
     font-size: 1.5em;
     text-align: center;
     padding: 20px;
@@ -68,7 +62,7 @@ section.slideshow {
 
 .custom-section-1 {
     max-width: 800px;
-    margin: 20px auto; /* Center the section horizontally */
+    margin: 20px auto;
     font-size: 1.5em;
     text-align: left;
     padding: 20px;
@@ -104,10 +98,61 @@ footer a[href="https://sg.shein.com/"] {
 
 /* Social Media Icons in the Footer */
 footer img {
-    max-width: 30px; /* Adjust as needed */
+    max-width: 30px;
     height: auto;
 }
 
 footer p {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .navbar {
+      padding: 5px 0;
+    }
+  
+    .shein-logo {
+      height: 30px;
+    }
+  
+    nav a {
+      padding: 5px 10px;
+    }
+  
+    .mySlides {
+      height: 50%;
+    }
+  
+    .custom-section,
+    .custom-section-1 {
+      max-width: 100%;
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .shein-logo {
+      height: 25px;
+    }
+  
+    .nav a {
+      padding: 5px;
+    }
+  
+    .mySlides {
+      height: 40%;
+    }
+  
+    .custom-section,
+    .custom-section-1 {
+      font-size: 1em;
+    }
+  }

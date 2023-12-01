@@ -19,7 +19,7 @@ body {
 
 .shein-logo {
     height: 40px;
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
 }
 
 nav {
@@ -32,24 +32,21 @@ nav a {
     padding: 5px 20px;
 }
 
-/* Main container styles */
 .main-container {
     display: flex;
     justify-content: space-around;
     margin: 20px;
 }
 
-/* Order details container */
 .order-details-container,
 .order-summary-container {
     border: 2px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    flex: 1; /* Take up available space */
+    flex: 1;
     margin-right: 20px;
 }
 
-/* Order details styles */
 .order-details {
     display: flex;
 }
@@ -70,7 +67,6 @@ h2.section-title {
     background-color: #f2f2f2;
 }
 
-/* Order Summary styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -82,7 +78,6 @@ th, td {
     text-align: left;
 }
 
-/* Order Confirmation Section styles */
 .order-confirmation {
     position: relative;
     padding: 20px;
@@ -136,3 +131,46 @@ footer img {
 footer p {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+ 
+    .navbar {
+      padding: 10px;
+    }
+  
+    .shein-logo {
+      margin-right: 5px;
+    }
+  
+    nav a {
+      padding: 5px 10px;
+    }
+  
+    .main-container {
+      flex-direction: column;
+      margin: 10px;
+    }
+  
+    .order-details-container,
+    .order-summary-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    h2.section-title {
+      font-size: 24px;
+    }
+  
+    .order-confirmation {
+      padding: 10px;
+    }
+  
+    .order-confirmation img {
+      max-width: 30px;
+      margin-right: 5px;
+    }
+  }
+  

@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         india: ['Mumbai', 'Delhi', 'Bangalore'],
         china: ['Beijing', 'Shanghai', 'Guangzhou'],
         japan: ['Tokyo', 'Osaka', 'Kyoto']
-        // Add more cities for other Asian countries as needed
     };
 
     function populateCities() {
@@ -52,13 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function redirectToCheckout() {
-        // Store user input in session storage
         sessionStorage.setItem('selectedCountry', countrySelect.value);
         sessionStorage.setItem('selectedCity', citySelect.value);
         sessionStorage.setItem('postalCode', document.getElementById('postal-code').value);
         sessionStorage.setItem('couponCode', document.getElementById('coupon-code').value);
 
-        // Redirect to Checkout.html
         window.location.href = "Checkout.html";
     }
 

@@ -1,38 +1,41 @@
-// Checkout.js
-
 document.addEventListener("DOMContentLoaded", function () {
-    const billingForm = document.querySelector(".billing-form");
-    const placeOrderBtn = document.getElementById("place-order-btn");
+    // Get form, login button, and navigation links
+    const loginForm = document.getElementById("loginForm");
+    const loginBtn = document.getElementById("loginBtn");
+    const shopLink = document.getElementById("shopLink");
+    const loginLink = document.getElementById("loginLink");
 
-    // Function to check if billing details are filled
-    function areBillingDetailsFilled() {
-        const requiredFields = document.querySelectorAll(".billing-form [required]");
-        let allFilled = true;
-
-        requiredFields.forEach(function (field) {
-            if (!field.value.trim()) {
-                allFilled = false;
-            }
-        });
-
-        return allFilled;
+    // Function to check if both username and password are filled
+    function isLoginValid() {
+        const username = document.getElementById("loginUser").value;
+        const password = document.getElementById("loginPassword").value;
+        return username.trim() !== "" && password.trim() !== "";
     }
 
-    // Function to handle form submission
-    function handleFormSubmission(event) {
-        if (!areBillingDetailsFilled()) {
-            alert("Please fill out all required billing details before placing the order.");
-            event.preventDefault();
-        }
-    }
+    // Add event listener to the login button
+    loginBtn.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the form from submitting by default
 
-    // Add event listener to the form
-    billingForm.addEventListener("submit", handleFormSubmission);
-
-    // Add event listener to the place order button (optional)
-    placeOrderBtn.addEventListener("click", function () {
-        if (!areBillingDetailsFilled()) {
-            alert("Please fill out all required billing details before placing the order.");
+        // Check if both username and password are filled
+        if (isLoginValid()) {
+            // If valid, redirect to Shop.html
+            window.location.href = "Shop.html";
+        } else {
+            alert("Please fill in both username and password.");
         }
+    });
+
+    // Add event listener to the Shop link
+    shopLink.addEventListener("click", function (event) {
+        // Check if login is valid before redirecting to Shop.html
+        if (!isLoginValid()) {
+            event.preventDefault(); // Prevent the default link behavior
+            alert("Please log in first.");
+        }
+    });
+
+    // Add event listener to the Log In link
+    loginLink.addEventListener("click", function (event) {
+        
     });
 });

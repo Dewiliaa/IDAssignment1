@@ -1,11 +1,10 @@
-/* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    min-height: 100vh;
 }
 
 /* Navigation bar styles */
@@ -32,14 +31,12 @@ nav a {
     padding: 5px 20px;
 }
 
-/* Main Content */
 .main-content {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
 
-/* Cart Section Styles */
 .cart-section {
     flex: 1.8;
     text-align: center;
@@ -107,7 +104,6 @@ nav a {
     color: gray;
 }
 
-/* Enclosing plus and minus buttons in a grey box */
 .quantity-box {
     background-color: #eee;
     border-radius: 5px;
@@ -128,7 +124,6 @@ nav a {
     background-color: #b71540;
 }
 
-/* Cart Details Section Styles */
 .cart-details {
     flex: 1;
     margin-left: 20px;
@@ -136,16 +131,14 @@ nav a {
     flex-direction: column;
 }
 
-/* Cart Total Styles */
 .cart-total {
     margin-bottom: 0;
     align-self:center;
 }
 
-/* Shipping Form Styles */
 .shipping-form {
     margin-bottom: 20px;
-    max-width: 400px; /* Set the maximum width for the form */
+    max-width: 400px;
     margin: auto;
 }
 
@@ -183,7 +176,6 @@ select {
     background-color: #2980b9;
 }
 
-/* Total and Checkout Styles */
 .checkout-section {
     text-align: center;
 }
@@ -226,7 +218,6 @@ footer a[href="https://sg.shein.com/"] {
     text-decoration: underline;
 }
 
-/* Social Media Icons in the Footer */
 footer img {
     max-width: 30px;
     height: auto;
@@ -235,3 +226,78 @@ footer img {
 footer p {
     margin-top: 10px;
 }
+
+/* Media Query for Screens Smaller than 768px */
+@media screen and (max-width: 768px) {
+    .shein-logo {
+      height: 30px;
+      margin-right: 5px;
+    }
+  
+    nav a {
+      padding: 5px 10px;
+    }
+  
+    .cart-section {
+      flex: 1;
+    }
+  
+    .cart-item img {
+      max-width: 100%;
+      margin-left: 0;
+      border-radius: 0;
+    }
+  
+    .product-info {
+      flex: 1;
+    }
+  
+    .quantity-controls {
+      gap: 5px;
+    }
+  
+    .cart-details {
+      flex: 1;
+      margin-left: 0;
+    }
+  
+    .shipping-form {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    label {
+      flex-basis: 100%;
+    }
+  
+    .proceed-to-checkout-button {
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Media Query for Screens Smaller than 480px */
+  @media screen and (max-width: 480px) {
+    .shein-logo {
+      height: 25px;
+      margin-right: 0;
+    }
+  
+    nav a {
+      padding: 5px;
+    }
+  
+    .cart-item img {
+      max-width: 100%;
+      margin-left: 0;
+      border-radius: 0;
+    }
+  
+    .quantity-controls {
+      gap: 3px;
+    }
+  
+    .proceed-to-checkout-button {
+      padding: 10px 15px;
+    }
+  }
+  

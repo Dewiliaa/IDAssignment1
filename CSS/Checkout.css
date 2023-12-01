@@ -1,4 +1,3 @@
-/* Reset styles */
 body, h1, h2, p, form, input, button {
     margin: 0;
     padding: 0;
@@ -175,10 +174,9 @@ nav a {
 }
 
 .card-details {
-    display: none; /* Initially hide the card details input */
+    display: none;
 }
 
-/* Add this part to hide it by default */
 .payment-options input:not(:checked) + label + .card-details {
     display: none;
 }
@@ -198,7 +196,7 @@ nav a {
 
 .place-order a {
     text-decoration: none;
-    color: #fff; /* Set the desired text color */
+    color: #fff;
 }
 
 .place-order:hover {
@@ -254,3 +252,60 @@ footer a {
 footer a[href="https://sg.shein.com/"] {
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px) {
+  
+    .checkout-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .billing-details {
+      margin-right: 0;
+    }
+  
+    .product-summary {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .payment-options {
+      margin-top: 20px;
+    }
+  
+    .place-order {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    .shein-logo {
+      height: 30px;
+      margin-right: 5px;
+    }
+  
+    nav a {
+      padding: 5px 10px;
+    }
+  
+    .billing-form input {
+      width: 100%;
+    }
+  
+    .product-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .product-price {
+      text-align: left;
+      margin-top: 5px;
+    }
+  
+    .payment-options label {
+      margin-bottom: 10px;
+    }
+  }
+  

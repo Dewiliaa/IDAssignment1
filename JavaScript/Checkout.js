@@ -43,19 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Get the "Place Order" button
     const placeOrderBtn = document.getElementById('place-order-btn');
-
-    // Add click event listener to the "Place Order" button
     placeOrderBtn.addEventListener('click', function (event) {
-        // Prevent the default behavior of the link click
         event.preventDefault();
 
-        // Validate billing details (you may add your validation logic here)
-
-        // If billing details are valid, proceed to the summary page
         if (validateBillingDetails()) {
-            // Get billing details
             const billingDetails = {
                 orderNumber: generateOrderNumber(),
                 email: document.getElementById('email').value,
@@ -66,17 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 contactNumber: document.getElementById('Phone').value,
             };
 
-            // Store billing details in localStorage
             localStorage.setItem('billingDetails', JSON.stringify(billingDetails));
-
-            // Redirect to the summary page
             redirectToSummary();
         }
     });
 
-    // Implement your validation and helper functions as needed
     function validateBillingDetails() {
-        // Add your validation logic here
         const firstName = document.getElementById('first-name').value;
         const lastName = document.getElementById('last-name').value;
         const country = document.getElementById('country').value;
@@ -86,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const phone = document.getElementById('Phone').value;
         const email = document.getElementById('email').value;
 
-        // Check if any of the required fields are empty
         if (
             firstName === '' ||
             lastName === '' ||
@@ -97,49 +83,35 @@ document.addEventListener('DOMContentLoaded', function () {
             phone === '' ||
             email === ''
         ) {
-            // Display an error message or take appropriate action
             alert('Please fill in all the required billing details.');
-            return false; // Validation failed
+            return false;
         }
 
-        // Add additional validation checks as needed
-
-        return true; // Validation passed
+        return true;
     }
 
     function generateOrderNumber() {
-        // Implement order number generation logic
-        return '12345678'; // Replace with your actual logic
+        return '12345678';
     }
 
     function getSelectedPaymentMethod() {
-        // Implement logic to get the selected payment method
-        // Example: return document.querySelector('input[name="payment"]:checked').id;
-        return 'mastercard'; // Replace with your actual logic
+        return 'mastercard';
     }
 
     function getCurrentDate() {
-        // Implement logic to get the current date
-        // Example: return new Date().toLocaleDateString();
-        return '1st November 2021'; // Replace with your actual logic
+        return '1st November 2021';
     }
 
     function getSelectedDeliveryOption() {
-        // Implement logic to get the selected delivery option
-        // Example: return document.querySelector('input[name="deliveryOption"]:checked').id;
-        return 'standardDelivery'; // Replace with your actual logic
+        return 'standardDelivery';
     }
 
     function getDeliveryAddress() {
-        // Implement logic to get the delivery address
-        // Example: return document.getElementById('street-address').value + '\n' + document.getElementById('Town').value + '\n' + ...;
-        return 'Singapore 123456\nJalan Bukit Merah\nBLK 102\n#07-123'; // Replace with your actual logic
+        return 'Singapore 123456\nJalan Bukit Merah\nBLK 102\n#07-123';
     }
 
-    // Redirect to the summary page
     function redirectToSummary() {
         window.location.href = 'Summary.html';
     }
 
-    // ... (existing code)
 });
