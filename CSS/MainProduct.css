@@ -129,6 +129,30 @@ button {
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease; /* Add transition effect for a smoother color change */
+
+    /* Additional styles for the default state (without hover) */
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9; /* Change the color on hover */
+    /* Additional styles for the hover state */
+}
+
+/* Quantity control button styles */
+.quantity-control button {
+    background-color: black; /* Set the background color for the quantity control buttons */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Additional styles for the default state (without hover) */
+.quantity-control button:hover {
+    background-color: #217dbb; /* Change the color on hover to a slightly darker shade */
+    /* Additional styles for the hover state */
 }
 
 /* Product Description Section */

@@ -196,6 +196,11 @@ nav a {
     transition: background-color 0.3s;
 }
 
+.place-order a {
+    text-decoration: none;
+    color: #fff; /* Set the desired text color */
+}
+
 .place-order:hover {
     background-color: #555;
 }

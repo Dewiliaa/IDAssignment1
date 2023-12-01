@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/Common.css">
     <link rel="stylesheet" href="/CSS/Checkout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-    <script src="/JavaScript/Checkout.js"></script>
+    <script src="/JavaScript/chek.js"></script>
     <title>Checkout Page</title>
 </head>
 <body>
@@ -26,26 +27,26 @@
         <h2>Billing Details</h2>
         <form class="billing-form">
             <label for="first-name">First Name*</label>
-            <input type="text" id="first-name" required>
-
+            <input type="text" id="first-name" name="first-name" required>
+    
             <label for="last-name">Last Name*</label>
-            <input type="text" id="last-name" required>
-
+            <input type="text" id="last-name" name="last-name" required>
+    
             <label for="country">Country*</label>
             <input type="text" name="country" id="country" required>
-
+    
             <label for="street-address">Street Address*</label>
             <input type="text" name="street-address" id="street-address" required>
-
+    
             <label for="ZIP">Postal Code / ZIP*</label>
             <input type="text" name="ZIP" id="ZIP" required>
-
+    
             <label for="Town">Town / City*</label>
             <input type="text" name="Town" id="Town" required>
-
+    
             <label for="Phone">Phone*</label>
             <input type="text" name="Phone" id="Phone" required>
-
+    
             <label for="email">E-mail*</label>
             <input type="text" name="email" id="email" required>
         </form>
@@ -56,16 +57,8 @@
         
         <div class="product-details">
             <div class="product-item">
-                <p class="product-name">Letter Graphic Drop Tee</p>
-                <p class="product-price">$9.50</p>
-            </div>
-            <div class="product-item">
-                <p class="product-name">Alive Tee</p>
-                <p class="product-price">$10</p>
-            </div>
-            <div class="product-item">
-                <p class="product-name">Khaki Shorts</p>
-                <p class="product-price">$10</p>
+                <p class="product-name">Expectations Top</p>
+                <p class="product-price">$15.99</p>
             </div>
         </div>
 
@@ -73,15 +66,15 @@
             <div class="cost-details">
                 <div class="cost-item subtotal">
                     <p class="cost-description">Subtotal</p>
-                    <p class="cost-amount">$100.00</p>
+                    <p class="cost-amount">$15.99</p>
                 </div>
                 <div class="cost-item shipping">
                     <p class="cost-description">Shipping</p>
-                    <p class="cost-amount">$10.00</p>
+                    <p class="cost-amount">$2.00</p>
                 </div>
                 <div class="cost-item total">
                     <p class="cost-description">Total</p>
-                    <p class="cost-amount">$110.00</p>
+                    <p class="cost-amount">$17.99</p>
                 </div>
             </div>
         </div>
@@ -107,10 +100,10 @@
                 <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
             </div>
         </div>
-
         <div class="place-order" id="place-order-btn">
-            <p>Place Order</p>
+            <a href="Summary.html">Place Order</a>
         </div>
+        
     </div>
 </div>
 

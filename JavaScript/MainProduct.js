@@ -40,7 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add functionality to the "Add to Cart" button
     addToCartButton.addEventListener('click', () => {
-        // You can add your logic here to handle adding to the cart
-        alert(`Added ${quantity} items to the cart!`);
+        // Call the addToCart function to navigate to the Cart.html page
+        addToCart();
     });
+
+    // Function to navigate to Cart.html
+    function addToCart() {
+        window.location.href = "Cart.html";
+    }
 });

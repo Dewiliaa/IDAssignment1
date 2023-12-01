@@ -89,6 +89,7 @@ th, td {
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 10px;
 }
 
 .order-confirmation::before {
